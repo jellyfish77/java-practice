@@ -1,0 +1,102 @@
+<Movie>
+	<Title>Up</Title>
+	<ImdbId>tt1049413</ImdbId>
+	<Gross>292979556</Gross>
+	<Format>
+		<Type>movie</Type>
+		<Color>Color</Color>
+		<Language>English</Language>
+		<AspectRatio>1.85</AspectRatio>
+		<Runtime>96</Runtime>
+	</Format>
+	<Production>
+		<Countries>
+			<Country>USA</Country>
+		</Countries>
+		<Budget>175000000</Budget>
+		<Year>2009</Year>
+		<ReleaseDate>2009-05-29Z</ReleaseDate>
+		<DvdDate>2009-11-10Z</DvdDate>
+		<Website>http://Disney.com/UP</Website>
+	</Production>
+	<Genres>
+		<Genre>Adventure</Genre>
+		<Genre>Animation</Genre>
+		<Genre>Comedy</Genre>
+		<Genre>Family</Genre>
+	</Genres>
+	<Plot>
+		<Description>Seventy-eight year old Carl Fredricksen travels to Paradise Falls in his home equipped with balloons,
+			inadvertently taking a young stowaway.</Description>
+		<PlotKeywords>
+			<PlotKeyword>balloon</PlotKeyword>
+			<PlotKeyword>house</PlotKeyword>
+			<PlotKeyword>promise</PlotKeyword>
+			<PlotKeyword>retirement</PlotKeyword>
+			<PlotKeyword>skeleton</PlotKeyword>
+		</PlotKeywords>
+	</Plot>
+	<Poster>https://m.media-amazon.com/images/M/MV5BMTk3NDE2NzI4NF5BMl5BanBnXkFtZTgwNzE1MzEyMTE@._V1_SX300.jpg</Poster>
+	<Awards>Won 2 Oscars. Another 74 wins &amp; 81 nominations.</Awards>
+	<UserVotes>665575</UserVotes>
+	<NumUsersReviewed>704</NumUsersReviewed>
+	<Rating>PG</Rating>
+	<ImdbLink>http://www.imdb.com/title/tt1049413/?ref_=fn_tt_tt_1</ImdbLink>
+	<Country>USA</Country>
+	<FacebookLikes>27000</FacebookLikes>
+	<NumPosterFaces>1</NumPosterFaces>
+	<Director>
+		<Name>Pete Docter</Name>
+		<FacebookLikes>0</FacebookLikes>
+	</Director>
+	<Writers>
+		<Writer>Pete Docter (story by), Bob Peterson (story by), Tom McCarthy (story by), Bob Peterson (screenplay by), Pete
+			Docter (screenplay by)</Writer>
+	</Writers>
+	<NumReviews>408</NumReviews>
+	<Cast>
+		<Actors>
+			<Actor>
+				<Biling>1</Biling>
+				<Name>John Ratzenberger</Name>
+				<FacebookLikes>1000</FacebookLikes>
+			</Actor>
+			<Actor>
+				<Biling>2</Biling>
+				<Name>Delroy Lindo</Name>
+				<FacebookLikes>848</FacebookLikes>
+			</Actor>
+			<Actor>
+				<Biling>3</Biling>
+				<Name>Jess Harnell</Name>
+				<FacebookLikes>262</FacebookLikes>
+			</Actor>
+			<Actor>
+				<Name>Edward Asner</Name>
+			</Actor>
+			<Actor>
+				<Name>Christopher Plummer</Name>
+			</Actor>
+			<Actor>
+				<Name>Jordan Nagai</Name>
+			</Actor>
+			<Actor>
+				<Name>Bob Peterson</Name>
+			</Actor>
+		</Actors>
+	</Cast>
+	<Ratings>
+		<Rating>
+			<Source>Internet Movie Database</Source>
+			<Value>8.2/10</Value>
+		</Rating>
+		<Rating>
+			<Source>Rotten Tomatoes</Source>
+			<Value>98%</Value>
+		</Rating>
+		<Rating>
+			<Source>Metacritic</Source>
+			<Value>88/100</Value>
+		</Rating>
+	</Ratings>
+</Movie>

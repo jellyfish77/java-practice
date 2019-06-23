@@ -12,7 +12,7 @@ public class XmlToObject {
 
 		try {
 
-			File file = new File("question.xml");
+			File file = new File("data/com/javapoint/question.xml");
 			JAXBContext jaxbContext = JAXBContext.newInstance(Question.class);
 
 			Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
