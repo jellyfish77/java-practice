@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="30">
+ 
+    <!-- Logging Properties -->
+    <Properties>
+        <Property name="LOG_PATTERN">%d{yyyy-MM-dd'T'HH:mm:ss.SSSZ} %logger{36} %t %p %msg%n</Property>        
+        <Property name="APP_LOG_ROOT">/home/otto/logs/java</Property>
+    </Properties>
+     
+    <Appenders>
+     
+        <!-- Console Appender -->
+        <Console name="Console" target="SYSTEM_OUT" follow="true">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </Console>
+         
+        <!-- File Appenders on need basis -->         
+        <RollingFile name="debugLog" fileName="${APP_LOG_ROOT}/log4j2-debug.log"
+            filePattern="${APP_LOG_ROOT}/log4j2-debug-%d{yyyy-MM-dd}-%i.log">
+            <LevelRangeFilter minLevel="DEBUG" maxLevel="DEBUG" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="19500KB" />
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+         
+        <RollingFile name="infoLog" fileName="${APP_LOG_ROOT}/log4j2-info.log"
+            filePattern="${APP_LOG_ROOT}/log4j2-info-%d{yyyy-MM-dd}-%i.log" >
+            <LevelRangeFilter minLevel="INFO" maxLevel="INFO" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="19500KB" />
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+         
+        <RollingFile name="errorLog" fileName="${APP_LOG_ROOT}/log4j2-error.log"
+            filePattern="${APP_LOG_ROOT}/log4j2-error-%d{yyyy-MM-dd}-%i.log" >
+            <LevelRangeFilter minLevel="ERROR" maxLevel="ERROR" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="19500KB" />
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+        
+        <RollingFile name="fatalLog" fileName="${APP_LOG_ROOT}/log4j2-fatal.log"
+            filePattern="${APP_LOG_ROOT}/log4j2-fatal-%d{yyyy-MM-dd}-%i.log" >
+            <LevelRangeFilter minLevel="FATAL" maxLevel="FATAL" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="19500KB" />
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+         
+        <RollingFile name="traceLog" fileName="${APP_LOG_ROOT}/log4j2-trace.log"
+            filePattern="${APP_LOG_ROOT}/log4j2-trace-%d{yyyy-MM-dd}-%i.log" >
+            <LevelRangeFilter minLevel="TRACE" maxLevel="TRACE" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="19500KB" />
+            </Policies>
+            <DefaultRolloverStrategy max="1"/>
+        </RollingFile>
+        
+        <RollingFile name="perfLog" fileName="${APP_LOG_ROOT}/log4j2-perf.log"
+            filePattern="${APP_LOG_ROOT}/log4j2-perf-%d{yyyy-MM-dd}-%i.log" >
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="19500KB" />
+            </Policies>
+            <DefaultRolloverStrategy max="1"/>
+        </RollingFile>
+        
+        <RollingFile name="packageLog" fileName="${APP_LOG_ROOT}/log4j2-package.log"
+            filePattern="${APP_LOG_ROOT}/log4j2-package-%d{yyyy-MM-dd}-%i.log" >
+            <LevelRangeFilter minLevel="FATAL" maxLevel="TRACE" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="19500KB" />
+            </Policies>
+            <DefaultRolloverStrategy max="1"/>
+        </RollingFile>
+         
+    </Appenders>
+ 
+    <Loggers>
+    
+    	<!--  this will intercept all logs from the specified package and send to the specified appenders -->
+    	<!-- 
+    	<Logger name="com.jellyfish77.log4j" additivity="false" level="trace">
+            <AppenderRef ref="packageLog" />
+            <AppenderRef ref="Console" />            
+        </Logger>
+     	-->
+                         
+        <Root level="trace">
+            <AppenderRef ref="Console" level="trace"/>
+            <AppenderRef ref="perfLog" level="trace"/>
+            <AppenderRef ref="traceLog" level="trace"/>
+            <AppenderRef ref="debugLog" level="trace"/>
+            <AppenderRef ref="infoLog" level="trace"/>
+            <AppenderRef ref="errorLog" level="trace"/>
+            <AppenderRef ref="fatalLog" level="trace"/>
+        </Root>
+ 
+    </Loggers>
+ 
+</Configuration>
