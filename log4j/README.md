@@ -4,7 +4,9 @@
 
 ### Configuration File
 
-- /resources/log4j2.xml
+Add the following to the Eclipse build path (as a Source) so that log4j2 can find the config file:
+
+- log4j/resources/log4j2.xml
 
 ### Log4J Libraries
 
