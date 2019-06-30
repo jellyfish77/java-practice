@@ -2,11 +2,13 @@
 
 Demonstrating java features.
 
-## Java
+## Java SE
 
 ### Basics
 
 #### The Java Language
+
+##### Annotations
 
 #### Essential Classes
 
@@ -20,8 +22,6 @@ Deployment — How to package applications and applets using JAR files, and depl
 #### Creating a GUI with Swing — A comprehensive introduction to GUI creation on the Java platform.
 
 #### Creating a JavaFX GUI — A collection of JavaFX tutorials.
-
-### Annotations
 
 ### Web Services
 
